@@ -18,7 +18,7 @@ const corsOptions = {
 app.use(cors(corsOptions)); // Use this after the variable declaration
 app.use(express.json());
 
-connectToMongoDB();
+await connectToMongoDB();
 
 setInterval(start_crawl, 5 * 60 * 1000); //每隔5分钟调用myFunction函数
 
