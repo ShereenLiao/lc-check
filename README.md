@@ -1,6 +1,4 @@
 # lc-check
-1. Add your .env file
-
 
 ## Deploy in aws ec2 linux
 
