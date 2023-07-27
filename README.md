@@ -10,6 +10,12 @@
    sudo chmod +x /usr/local/bin/docker-compose\
    docker-compose version
    ```
+3. add gourp membership for user
+    ```
+    sudo usermod -a -G docker ec2-user\
+    id ec2-user\
+    newgrp docker
+    ```
 3. start the docker
   ```sudo systemctl start docker```
 4. add your .env file
