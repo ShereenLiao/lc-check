@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: backend
+    ports:
+      - 5050:5050
+    volumes:
+      - ./backend:/code/backend
+    restart: always
+    networks:
+      - react-express
+  frontend:
+    restart: always
+    build:
+      context: frontend
+    ports:
+      - 3000:3000
+    volumes:
+      - ./front-end:/code/frontend
+    networks:
+      - react-express
+    expose:
+      - 3000
+networks:
+  react-express:
