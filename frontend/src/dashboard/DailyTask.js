@@ -13,6 +13,7 @@ export default function DailyTask() {
  
   React.useEffect(() => {
     const questions = getTodayQuestion();
+    console.log(questions);
     setQuestions(questions);
     // getTodayQuestion().then((data) => {
     //   console.log(data);

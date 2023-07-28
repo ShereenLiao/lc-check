@@ -8,6 +8,7 @@ const initDate = DateTime.fromISO('2023-07-27');
 let questions = [];
 
 export const parseQuestion = () =>{
+    return new Promise((resolve, reject) =>
     Papa.parse(NeetCode, {
         download: true,
         header: true, // gives us an array of objects
@@ -15,7 +16,7 @@ export const parseQuestion = () =>{
         complete: function (input) {
             questions = input.data;
         }
-    });
+    }));
 }
 
 

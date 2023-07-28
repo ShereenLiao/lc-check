@@ -88,20 +88,6 @@ const defaultTheme = createTheme();
 
 export default function Dashboard() {
   const [open, setOpen] = React.useState(true);
-  // const [submits, setSubmits] = React.useState([]);
-
-  // React.useEffect(() => {
-  //   fetch('http://localhost:5050/records', {
-  //     method:"get",
-  //     headers: {
-  //       "Content-Type": "application/json"
-  //  }})
-  //   .then(response => response.json())
-  //   .then((data) => {
-  //     console.log(data);
-  //     setSubmits(data);
-  //   }).catch(error => console.error('Error fetching data:', error));
-  // }, [])
   
   const toggleDrawer = () => {
     setOpen(!open);
