@@ -21,4 +21,4 @@
 4. add your .env file
   ```touch .env```
 4. run containers in background
-  ```docker-compose --env-file  .env up -d```
+  ```docker-compose --env-file  .env up -d --build```
