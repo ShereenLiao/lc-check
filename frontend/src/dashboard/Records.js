@@ -15,7 +15,7 @@ export default function Records(props) {
   const [submits, setSubmits] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('http://localhost:5050/records', {
+    fetch('http://ec2-54-208-137-54.compute-1.amazonaws.com:5050/records', {
       method:"get",
       headers: {
         "Content-Type": "application/json",

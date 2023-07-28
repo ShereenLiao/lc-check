@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Dashboard from './dashboard/Dashboard'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { parseQuestion } from './utils/questionUtils';
 
+await parseQuestion();
 
 export default function App() {
   return (

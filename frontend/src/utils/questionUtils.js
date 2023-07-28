@@ -7,7 +7,7 @@ const initDate = DateTime.fromISO('2023-07-27');
 
 let questions = [];
 
-const parseQuestion = () =>{
+export const parseQuestion = () =>{
     Papa.parse(NeetCode, {
         download: true,
         header: true, // gives us an array of objects
@@ -18,7 +18,6 @@ const parseQuestion = () =>{
     });
 }
 
-await parseQuestion();
 
 export const getTodayQuestion = () => {
   const today = DateTime.now();
