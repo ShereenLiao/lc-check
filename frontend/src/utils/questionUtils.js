@@ -18,9 +18,9 @@ const parseQuestion = () =>{
     });
 }
 
-parseQuestion();
+await parseQuestion();
 
-export const getTodayQuestion = async() => {
+export const getTodayQuestion = () => {
   const today = DateTime.now();
   const diff = today.diff(initDate, "days").toObject();
   const days = Math.round(diff.days);

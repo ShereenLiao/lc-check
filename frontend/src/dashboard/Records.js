@@ -18,7 +18,9 @@ export default function Records(props) {
     fetch('http://localhost:5050/records', {
       method:"get",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Credentials":true,
+        "Access-Control-Allow-Origin":"*",
    }})
     .then(response => response.json())
     .then(async (data) => {

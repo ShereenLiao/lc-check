@@ -12,10 +12,12 @@ export default function DailyTask() {
   const [questions, setQuestions] = React.useState([]);
  
   React.useEffect(() => {
-    getTodayQuestion().then((data) => {
-      // console.log(data);
-      setQuestions(data);
-    })
+    const questions = getTodayQuestion();
+    setQuestions(questions);
+    // getTodayQuestion().then((data) => {
+    //   console.log(data);
+    //   setQuestions(data);
+    // })
     }, [])
 
   return (

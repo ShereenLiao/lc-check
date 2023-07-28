@@ -41,6 +41,8 @@ app.get("/records", async (req, res) => {
     submits.push(submit);
   }
   submits.sort((s1, s2) => s2.data.length - s1.data.length);
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Credentials", true);
   res.send(submits);
 });
 
